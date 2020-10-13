@@ -1,5 +1,4 @@
-<b>Share while you Learn
-PyLearn
+Share while you Learn
 
 While you learn the new concepts of Python programming language, contribute the concepts along with examples and code(or algorithm)
 
