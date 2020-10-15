@@ -1,0 +1,30 @@
+#Let's understand the difference b/w sort() and sorted()
+
+#sort()
+#sort() function will modify the list it is called on.
+#The sort() function modifies the list in-place and has no return value.
+
+#sorted()
+#The sorted() function will create a new list containing a sorted version of the list it is given. 
+#The sorted() function will not modify the list passed as a parameter.
+#sorted() function will return a list so you must assign the returned data to a new variable. 
+
+#If you want to sort a list but still have the original unsorted version, then you would use the sorted() function.
+#If maintaining the original order of the list is unimportant, then you can call the sort() function on the list.
+
+#eg:
+
+vegetables = ['squash', 'pea', 'carrot', 'potato']
+new_list = sorted(vegetables)
+
+# new_list = ['carrot', 'pea', 'potato', 'squash']
+print(new_list)
+
+# vegetables = ['squash', 'pea', 'carrot', 'potato']
+print(vegetables)
+
+
+vegetables.sort()
+
+# vegetables = ['carrot', 'pea', 'potato', 'squash']
+print(vegetables)
