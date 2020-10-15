@@ -9,16 +9,16 @@ It's also possible to calculate .
 >>> pow(a,b,m)  
 This is very helpful in computations where you have to print the resultant % mod.
 
-Note: Here,  and  can be floats or negatives, but, if a third argument is present,  cannot be negative.
+Note: Here a, b and m  can be floats or negatives, but, if a third argument is present,  cannot be negative.
 
 Note: Python has a math module that has its own pow(). It takes two arguments and returns a float. Frankly speaking, we will never use math.pow().
 
 Task
-You are given three integers: , , and , respectively. Print two lines.
+You are given three integers:a ,b  and m, respectively. Print two lines.
 The first line should print the result of pow(a,b). The second line should print the result of pow(a,b,m).
 
 Input Format
-The first line contains , the second line contains , and the third line contains .
+The first line contains a, the second line contains b , and the third line contains m.
 
 Constraints
 
