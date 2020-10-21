@@ -20,9 +20,6 @@ The first line should print the result of pow(a,b). The second line should print
 Input Format
 The first line contains a, the second line contains b , and the third line contains m.
 
-Constraints
-
-
 
 Sample Input
 
@@ -33,7 +30,6 @@ Sample Output
 
 81
 1
-
 
 
 CODE
