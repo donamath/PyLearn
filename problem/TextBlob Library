@@ -1,0 +1,20 @@
+# Textblob is an open-source python library for processing textual data.
+# It performs different operations on textual data such as noun phrase extraction, sentiment analysis, classification, translation, etc. 
+
+# Code
+  from  textblob import TextBlob
+  blob= TextBlob("How are you")             #creating textblob object with required text
+ 
+#language detection
+  print(blob.detect_language())               
+#Output
+ en
+   
+#Translation
+   print(blob.translate(to='ml'))       #translating to malayalam
+   എന്തൊക്കെയുണ്ട്                    #output
+   
+   print(blob.translate(to='hi'))      #translating to hindi
+   क्या हाल है                            #output
+  
+#noun phrase extraction
