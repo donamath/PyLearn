@@ -2,7 +2,7 @@ Loops are control structures that iterate over a range to perform a certain task
 
 There are two kinds of loops in Python.
 
-A for loop:
+A for loop is here:
 
 for i in range(0, 5):
     print i
