@@ -1,6 +1,6 @@
 Loops are control structures that iterate over a range to perform a certain task. They can work with any iterable type, such as lists and dictionaries. To control the loop in this problem, use the range function (see below for a description).
 
-There are two kinds of loops in Python.
+There are 2 kinds of loops in Python.
 
 A for loop is here:
 
