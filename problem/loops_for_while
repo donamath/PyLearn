@@ -1,0 +1,29 @@
+Loops are control structures that iterate over a range to perform a certain task. They can work with any iterable type, such as lists and dictionaries. To control the loop in this problem, use the range function (see below for a description).
+
+There are two kinds of loops in Python.
+
+A for loop is here:
+
+for i in range(0, 5):
+    print i
+    
+output
+0
+1
+2
+3
+4
+    
+And a while loop:
+
+i = 0
+while i < 5:
+    print i
+    i += 1
+
+output
+0
+1
+2
+3
+4
