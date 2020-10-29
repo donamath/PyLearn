@@ -5,7 +5,9 @@ While you learn the new concepts of Python programming language, contribute the 
 
 -Fork this repository.
 
--Check the list of concepts that are present in the folder problems.
+-Check the list of concepts that are present in the folder 'problems'.
+
+-You can add the features of various python libraries in the folder named 'Libraries'.
 
 -Find out a concept that is not present in the folder and create a new file. Example: list_comprehension. 
 
