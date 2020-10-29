@@ -1,0 +1,75 @@
+# Textblob is an open-source python library for processing textual data.
+# It performs different operations on textual data such as noun phrase extraction, sentiment analysis, classification, translation, etc. 
+
+#language detection
+  from  textblob import TextBlob
+  blob= TextBlob("How are you")                     #creating textblob object with required text
+  print(blob.detect_language())               
+#Output
+ en
+
+
+
+#Translation
+#code
+  from  textblob import TextBlob
+  blob= TextBlob("How are you")                        #creating textblob object with required text
+  print(blob.translate(to='ml'))                       #translating to malayalam
+  എന്തൊക്കെയുണ്ട്                                    #output
+   
+  print(blob.translate(to='hi'))                       #translating to hindi
+  क्या हाल है                                             #output
+   
+  
+  
+  
+#noun phrase extraction
+#code
+  from textblob import TextBlob
+  blob = TextBlob("Apple is red.")         
+  for nouns in blob.noun_phrases:                        #Extract nouns
+     print(nouns)
+#output
+ apple
+ 
+ 
+ 
+#Occurences of words
+#code 
+ from textblob import TextBlob 
+ text = TextBlob("I am confused sometime, sometime I messed up things.") 
+ text = text.word_counts['I']                          # TextBlob.word_counts() method returns the no. of times the specific word occurs
+ print(text) 
+#output
+ 2
+ 
+ 
+#Spell check and correction
+#code( using TextBlob.correct() method )
+   from textblob import TextBlob                        # import TextBlob   
+   text = TextBlob("Alwys be sincire") 
+   text = text.correct()                  
+   print(text)
+#output
+  Always be sincere
+  
+#code ( using TextBlob.spellcheck() )
+   from textblob import Word                            # import TextBlob
+   text = Word("clearnc")
+   print(text.spellcheck())                             #  spellcheck() returns a list of (word, confidence) tuples with spelling suggestions.
+#output
+   [('clear', 0.41532976827094475), 
+   ('clearly', 0.23172905525846701), 
+   ('clean', 0.10873440285204991), 
+   ('cleared', 0.0944741532976827), 
+   ('learn', 0.0677361853832442),
+   ('clearing', 0.05169340463458111), 
+   ('clearer', 0.0196078431372549),
+   ('learns', 0.0035650623885918), 
+   ('clears', 0.0035650623885918), 
+   ('learnt', 0.0017825311942959), 
+   ('clearance', 0.0017825311942959)]
+   
+
+
+  
