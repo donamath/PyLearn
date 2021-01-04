@@ -1,0 +1,103 @@
+Given a word, create a new word by swapping some or all of its characters. This new word must meet two criteria:
+
+It must be greater than the original word
+It must be the smallest word that meets the first condition
+For example, given the word w=abcd , the next largest word is abdc.
+
+Complete the function biggerIsGreater below to create and return the new string meeting the criteria. If it is not possible, return no answer.
+
+[Algorithm Analysis](https://livecodestream.dev/challenge/bigger-is-greater/)
+
+Input Format
+
+The first line of input contains T, the number of test cases.
+Each of the next T lines contains w.
+
+Output Format
+
+For each test case, output the string meeting the criteria. If no answer exists, print no answer.
+
+Sample Input 0
+
+5
+ab
+bb
+hefg
+dhck
+dkhc
+
+Sample Output 0
+
+ba
+no answer
+hegf
+dhkc
+hcdk
+
+Sample Input 1
+
+6
+lmno
+dcba
+dcbb
+abdc
+abcd
+fedcbabcd
+
+Sample Output 1
+
+lmon
+no answer
+no answer
+acbd
+abdc
+fedcbabdc
+
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+from itertools import permutations 
+
+
+# Complete the biggerIsGreater function below.
+def biggerIsGreater(w):
+    w = list(w)
+    # Find non-increasing suffix
+    i = len(w)-1
+    while i > 0 and w[i-1] >= w[i]:
+        i -= 1
+
+    if i <= 0:
+        return 'no answer'
+
+    # Find the rightmost successor to pivot in the suffix
+    j = len(w) - 1
+    while w[j] <= w[i - 1]:
+        j -= 1
+    
+    # Swap the pivot with the rightmost character
+    w[i-1], w[j] = w[j], w[i-1]
+
+    # Reverse the sufix
+    w[i:] = w[len(w)-1:i-1:-1]
+
+    return ''.join(w)
+        
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    T = int(input())
+
+    for T_itr in range(T):
+        w = input()
+
+        result = biggerIsGreater(w)
+
+        fptr.write(result + '\n')
+
+    fptr.close()
