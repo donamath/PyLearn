@@ -1,0 +1,46 @@
+Sunny and Johnny like to pool their money and go to the ice cream parlor. Johnny never buys the same flavor that Sunny does. The only other rule they have is that they spend all of their money.
+
+Given a list of prices for the flavors of ice cream, select the two that will cost all of the money they have.
+
+Input Format
+
+The first line contains an integer,t , denoting the number of trips to the ice cream parlor. The next t sets of lines each describe a visit. Each trip is described as follows:
+
+The integer m, the amount of money they have pooled.
+The integer n, the number of flavors offered at the time.
+n space-separated integers denoting the cost of each flavor: .
+
+Output Format
+
+For each test case, print two space-separated integers denoting the indices of the two flavors purchased, in ascending order.
+
+Sample Input
+
+2
+4
+5
+1 4 5 3 2
+4
+4
+2 2 4 3
+
+Sample Output
+
+1 4
+1 2
+
+def icecreamParlor(m, arr):
+    for i in range(len(arr)):
+        for j in range(i+1,len(arr)):
+            x=arr[i]
+            if(x+arr[j]==m):
+                print(i+1,j+1)
+            
+            
+t = int(input())
+for i in range(t):
+        m = int(input())
+        n = int(input())
+        arr = [int(i) for i in input().split()]
+        icecreamParlor(m,arr)
+        
