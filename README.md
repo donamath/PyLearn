@@ -3,20 +3,20 @@ A simple repository which introduces some concept oriented problems and some ran
 
 Contents included:
 
-1. Power and Mod Power
+- Power and Mod Power
 
-2. Command Line Arguments
+- Command Line Arguments
 
-3. if elif else
+- if elif else
 
-4. List Comprehensions
+- List Comprehensions
 
-5. for,while loops
+- for,while loops
 
-6. map function
+- map function
 
-7. print statement
+- print statement
 
-8. Sort,sorted functions
+- Sort,sorted functions
 
-9. String split and join
+- String split and join
