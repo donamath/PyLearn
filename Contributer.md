@@ -3,14 +3,16 @@
 While you learn the new concepts of Python programming language, contribute the concepts along with examples and code(or algorithm)
 
 
--Fork this repository.
+- Fork this repository.
 
--Check the list of concepts that are present in the folder 'problems'.
+- You can add coding problems with solutions in the folder 'Random Problems'.
 
--You can add the features of various python libraries in the folder named 'Libraries'.
+- You can add the features of various python libraries in the folder named 'Libraries'.
 
--Find out a concept that is not present in the folder and create a new file. Example: list_comprehension. 
+- Check the list of concepts that are present in the folder 'Concept oriented problems'.
 
--Commit the changes. Give the message as 'Add name_of_file'. For Example: 'Add list_comprehension'
+- Find out a concept that is not present in the folder and create a new file. Example: list_comprehension. 
 
--Submit the PR!
+- Commit the changes. Give the message as 'Add name_of_file'. For Example: 'Add list_comprehension'
+
+- Submit the PR!
