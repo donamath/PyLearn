@@ -1,0 +1,10 @@
+## Given an array A of size N, print the reverse of it.
+
+t=int(input())
+while(t!=0):
+    n=int(input())
+    a=[int(i)for i in input().split()]
+    for i in range(n-1,-1,-1):
+        print(a[i],end=" ")
+    print()
+    t-=1
