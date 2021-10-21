@@ -1,0 +1,34 @@
+## Given a string A and a dictionary of n words B, find out if A can be segmented into a space-separated sequence of dictionary words.
+
+Note: From the dictionary B each word can be taken any number of times and in any order.
+
+
+def wordBreak(line, dictionary):
+    # sort according to length of items
+    dictionary.sort(key=len,reverse=True)
+    #dictionary.reverse()
+    for i in dictionary:
+        if i in line:
+            line=line.replace(i,"")
+    if(len(line)==0):
+        return 1
+    else:
+        return 0
+
+#{ 
+#  Driver Code Starts
+#Initial Template for Python 3
+
+if __name__ == '__main__':
+    test_case = int(input())
+
+    for _ in range(test_case):
+        number_of_elements = int(input())
+        dictionary = [word for word in input().strip().split()]
+        line = input().strip()
+        res = wordBreak(line, dictionary)
+        if res:
+            print(1)
+        else:
+            print(0)
+# } Driver Code Ends
